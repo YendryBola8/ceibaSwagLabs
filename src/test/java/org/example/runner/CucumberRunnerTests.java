@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/resources/features/ConfirmOrder.feature"
         },
         glue = "org.example.definitions",
-        plugin = {}
+        plugin = {"pretty", "html:target/cucumberreport.html","json:target/cucumber-report.json"}
 )
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
 }
