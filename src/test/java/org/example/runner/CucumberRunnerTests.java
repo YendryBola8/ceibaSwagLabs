@@ -11,6 +11,5 @@ import io.cucumber.testng.CucumberOptions;
         glue = "org.example.definitions",
         plugin = {}
 )
-
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
 }
