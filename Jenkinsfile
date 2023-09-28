@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean compile'  // Compilar el proyecto Maven
+                sh 'clean compile'  // Compilar el proyecto Maven
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'mvn test' // Ejecutar las pruebas Selenium
+                sh 'test' // Ejecutar las pruebas Selenium
             }
         }
 
